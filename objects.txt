@@ -1,0 +1,3 @@
+Js has a special property which is called prototype.
+prototype has a some properties or methods which we call in objects
+js objects by default herit kartay hay prototype ko kuch obje

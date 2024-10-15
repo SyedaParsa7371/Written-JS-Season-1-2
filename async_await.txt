@@ -1,0 +1,8 @@
+async always return the promise if we return a value then the async rap the value in promise automatically 
+async await combo use to handle promises
+await is the keyword that is only used inside a async function and you should write a await in front of a promise /before the promise 
+JS Enginee is not wait for the promise to resolve in normal function case 
+but the JS Enginee in asyn they first wait for the promise to complete then the run all over the program
+At the point where we declare await at this point the wait for the promise to complete but if we write any log program before the await the will run 
+
+fetch function is a promise when you give a function it return a response

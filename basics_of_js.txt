@@ -1,0 +1,63 @@
+--Lec 2:
+-Every thing works in execution context having two component 1.Memory/Varaiable Environment/Memory Creation Phase 2.Code Component/Thread of execution/code execution phase 
+-Memory:contain key value pair 
+-Code Component:code is execute one line at a time is also know as thread of execution is a place where whole js code is executed 
+-JS is synchronous single threaded Language run one command at a time in single oder
+--Lec 3:
+ 
+--Lec 6:
+-Js engine create a global execution context
+-JS program also create a window.Window is a global object which create along with GEC 
+when any js program is create the global obj is create along with the GEC.
+-The global object creat
+-Window is big object with lots of function and object.these fun is create by js engine 
+-The global space is that when you create any varaiable outside the function. 
+
+Notes:
+	• window object is created by the JS engines of the respective browsers when global execution context is created.
+	• whenever an execution context is created a "this" variable is also created.
+	• at the global level "this" points to the global object( window object in case of browsers).
+	• anything that is not inside a function is the "global space".
+	• whenever we create any variables or functions in the "global space", they get attached to the global object( window object in case of browsers).
+	
+	so to access the variables/function defined in the global space , 
+	we can use any of the below:
+		console.log(window.a);
+		console.log(a);
+		console.log(this.a)             //at the global space level, where this points to the window object
+--lec 8:
+lexicall means one inside another
+lexically means value is present physically in funct.
+lexical enivornment is local memory+lexical environment of parent.
+
+--lec 9:
+in let case we cannot call varaible without initialization.
+in var  value is stored in gloabal object we call var value without declarization of value because this is in global object.
+if we call the varaiable that was not present in memory they give a reference error.
+in var case if we call the value before the initialization but the value is present in the memory the give error of undefined/special type of placeholder but memory was allocated to value.
+in let case the throws the reference error if we call the value  before initialization and if  the value is present in memory so it was in temporal dead zone.
+The temporal dead zone is a time when the varaiable was hosted till they intialize some value.
+in the case of let and cost the value is stored in different/separate memory space which is called hosting
+in case of var value is attach to the window object an the case is same in this case.
+in case of let/const value is attach to the separate store space.
+in case of Let is strict the var because we cannot redeclaration if we redeclaratize they throw the syntax error an they doesnot run the in the next line if the repating value is in last.
+in case of var we redeclare the value.
+in case of const we initialize the value at time of value creation if we not do this they give an missing initializer error.
+in const we do creation and declaration same time if we redeclarate the value they give type error and if we create but not give any intialization they give syntax error.
+the reference error is when js engine tries to find out the value in memory space but can't find/access the value.
+
+-- lec 10:
+block is used to combine multiple js statement into a group and js assume that block is one statement.
+in case of var if we define same varaiable inside and outside the block they get value from the block varaiable if we use var so the value of var is lastest which we define they did't read the above value
+in case of let if we define same varaiable inside and outside the block the get different value from block and different value from outside the block.
+we have three types of scope in block scope the {} varaiable is stored in block memory space. in script scope the let and const value was stored and the global scope is the space where the var value is stoed 
+
+--lec 11:
+clouser is a func that bind togather with its lexical environment.
+func along with its lexical scope from a clouser
+
+--lec 12:
+
+setTimeout Allows us to run a func once after the interval of time
+setInterval Allows us to run a func once after the interval of time but this in running infinitely 
+--lec 12:

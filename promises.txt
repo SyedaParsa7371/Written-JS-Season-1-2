@@ -1,0 +1,28 @@
+-----lec1-----
+Promises is used for parallel execution
+Three states in promises pending,fullfilled and rejected 
+to create a new promise we use new keyword and in promise paraenthesis we have a function which have to arguments resolve and reject 
+pending means in progress
+fullfilled means completed 
+rejeted means error
+
+two ways to handle the promise 
+then ,catch
+then is used after completing the pending condition the next step to perform 
+catch if there was an error in pending they throw the error.
+
+fetch function is a promise when you give a function it return a response
+
+--Promise API----
+
+promise.all() wait for all three apis to finish and show all the result togather.{This is a success case} if tou take an array of promises if all pass so they return array of success result
+promise.all() if any of the promise is fail so the promise.all throw an error.This Api is (fail fast technique) if one fail so all fail they doesnot check who pass or who fail the directly give you answer that your request is fail  
+
+
+promise.allSetteled if you get an error so the error shown doesnot block the result if all are clear or fail they wait and check whose pass and fail and give the result accordingly and it depenend on the result
+
+promise.race() the promise who finish first the result of winner was show the value of the first settled promise 
+if the first promise in promise.race is fail so he error was thrown this is like a race whether the result is succes or fail if the result is fail they doesnot wait for other promise for the successful result they show the result 
+
+
+promise.any()  is very similar to race but it wait for the first success of any promise if all the promises is fail so the result is aggregated error it will be the array of the errors is the first seeking success 
